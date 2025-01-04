@@ -9,27 +9,42 @@
     <!-- Custom CSS -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
         }
         .hero {
-            background-color: #f8f9fa;
-            padding: 60px 0;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
             text-align: center;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 10px;
         }
         .hero p {
             font-size: 1.2rem;
-            color: #6c757d;
         }
         .section-title {
             font-size: 2rem;
             margin-top: 40px;
             margin-bottom: 20px;
             text-align: center;
+        }
+        .offerings, .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         .contact-info a {
             text-decoration: none;
@@ -48,6 +63,29 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jonash Dahal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offerings">What I Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -57,36 +95,38 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I'm Jonash Dahal, an IT student from Nepal with a passion for technology and education. I strive to make learning engaging and effective, guiding individuals through the complexities of IT.</p>
+    </section>
+
     <!-- What I Offer Section -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">What I Offer</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Online Classes</h3>
-                    <ul>
-                        <li>AI</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Tech Consultation</h3>
-                    <p>Helping organizations become digital and increase revenue.</p>
-                </div>
+    <section id="offerings" class="container">
+        <h2 class="section-title">What I Offer</h2>
+        <div class="row">
+            <div class="col-md-6 offerings">
+                <h3>Online Classes</h3>
+                <ul>
+                    <li>AI</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+            <div class="col-md-6 offerings">
+                <h3>Tech Consultation</h3>
+                <p>Helping organizations become digital and increase revenue.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section>
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:jonasdahal6@gmail.com">jonasdahal6@gmail.com</a></p>
-                <p>Facebook: <a href="https://www.facebook.com/ryzen.ub?mibextid=ZbWKwL" target="_blank">facebook.com/ryzen.ub</a></p>
-                <p>YouTube: <a href="https://youtube.com/@jonashyt?si=gWnP9YQQC1zP6X8f" target="_blank">youtube.com/@jonashyt</a></p>
-            </div>
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:jonasdahal6@gmail.com">jonasdahal6@gmail.com</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/ryzen.ub?mibextid=ZbWKwL" target="_blank">facebook.com/ryzen.ub</a></p>
+            <p>YouTube: <a href="https://youtube.com/@jonashyt?si=gWnP9YQQC1zP6X8f" target="_blank">youtube.com/@jonashyt</a></p>
         </div>
     </section>
 
